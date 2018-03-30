@@ -96,6 +96,10 @@ function info() {
     echo -e "[\033[${FG}\033[${BG}${system}\033[0m] $*"
 }
 
+warning() {
+    echo "$(tput setaf 1)$1$(tput sgr0)"
+}
+
 function bail() {
     FG="1;31m"
     BG="40m"
