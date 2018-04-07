@@ -46,11 +46,6 @@ TRANSFORM_28c90="0 1 0 -1 0 1 0 0 1"
 TRANSFORM_28c180="1 0 0 0 1 0 0 0 1"
 TRANSFORM_28c270="0 -1 1 1 0 0 0 0 1"
 
-
-warning() { 
-	echo WARNING : $1
-}
-
 ############################ Script assisters ############################
 
 # Given a list of strings representing options, display each option
@@ -96,8 +91,8 @@ function info() {
     echo -e "[\033[${FG}\033[${BG}${system}\033[0m] $*"
 }
 
-warning() {
-    echo "$(tput setaf 1)$1$(tput sgr0)"
+function warning() {
+    echo "$(tput setaf 1)WARNING: $1$(tput sgr0)"
 }
 
 function bail() {
