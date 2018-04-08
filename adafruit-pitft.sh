@@ -229,7 +229,7 @@ device_tree=bcm2708-rpi-b-plus.dtb
 [pi2]
 device_tree=bcm2709-rpi-2-b.dtb
 [pi3]
-device_tree=bcm2710-rpi-3-b.dtb
+device_tree=bcm2710-rpi-3-b-plus.dtb
 [all]
 dtparam=spi=on
 dtparam=i2c1=on
